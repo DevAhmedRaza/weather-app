@@ -1,0 +1,11 @@
+{
+  "name": "simple-weather-app",
+  "version": "1.0.0",
+  "description": "Lightweight weather app using Open-Meteo geocoding and weather APIs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}

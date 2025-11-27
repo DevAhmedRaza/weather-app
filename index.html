@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Weather App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Simple Weather</h1>
+    <form id="searchForm" class="search-form">
+      <input id="cityInput" placeholder="Enter city name (e.g., New York)" required />
+      <select id="units">
+        <option value="metric">Celsius</option>
+        <option value="imperial">Fahrenheit</option>
+      </select>
+      <button>Search</button>
+      <button type="button" id="locBtn" title="Use my location">Use my location</button>
+    </form>
+
+    <div id="status" class="status hidden"></div>
+
+    <section id="result" class="result hidden">
+      <div class="card">
+        <div class="left">
+          <div id="weatherIcon" class="icon">☀️</div>
+        </div>
+        <div class="right">
+          <div class="city" id="cityName">City, Country</div>
+          <div class="temp" id="temperature">--°</div>
+          <div class="desc" id="conditions">--</div>
+          <div class="details">
+            <div>Wind: <span id="wind">--</span></div>
+            <div>Humidity: <span id="humidity">--</span></div>
+            <div>Time: <span id="time">--</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small>Data from <a href="https://open-meteo.com" target="_blank">Open-Meteo</a> (free, no API key)</small>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
